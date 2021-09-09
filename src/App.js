@@ -1,6 +1,6 @@
 
 
-import React,{useEffect} from 'react'
+import React from 'react'
 import {Switch,Route} from "react-router-dom"
 import SignIn from "./Component/auth/SignIn"
 import SignUp from "./Component/auth/SignUp"

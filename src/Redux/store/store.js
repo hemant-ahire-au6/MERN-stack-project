@@ -6,8 +6,7 @@ import rootSaga from '../sagas/rootSaga'
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import {
     persistStore,
-    persistReducer,
-    persistCombineReducers
+    persistReducer
   } from 'redux-persist';
 import storage from 'redux-persist/es/storage';
 
