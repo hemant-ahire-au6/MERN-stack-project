@@ -5,6 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import {Link } from "react-router-dom"
 
 const useStyles = makeStyles({
   root: {
@@ -30,7 +31,6 @@ function CardForm() {
   return (
     <Card className={classes.root}>
       <CardContent>
-        
         <Typography variant="h5" component="h2">
           Project Name
         </Typography>
@@ -41,9 +41,12 @@ function CardForm() {
           {'"a benevolent smile"'}
         </Typography>
       </CardContent>
+      <Link to ="/project-details">
       <CardActions>
         <Button size="small">Check details</Button>
       </CardActions>
+      </Link>
+      
     </Card>
   );
 }

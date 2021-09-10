@@ -99,15 +99,13 @@ function FormDialog() {
           </MuiPickersUtilsProvider>
 
 
-
-
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
             Cancel
           </Button>
           <Button onClick={handleClose} color="primary">
-            Subscribe
+            Add Project
           </Button>
         </DialogActions>
       </Dialog>
