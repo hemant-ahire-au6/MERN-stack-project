@@ -45,8 +45,6 @@ export default function CustomizedTables() {
     const classes = useStyles();
 
     return (
-
-
         <>
             <NavBar />
             <Grid container >
@@ -90,8 +88,5 @@ export default function CustomizedTables() {
                 </Grid>
             </Grid>
         </>
-
-
-
     );
 }
