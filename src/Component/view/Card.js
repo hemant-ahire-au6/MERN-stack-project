@@ -38,7 +38,13 @@ function CardForm() {
         <Typography variant="body2" component="p">
          Project Details
           <br />
-          {'"a benevolent smile"'}
+          {"Project Members:"}
+        </Typography>
+        <Typography variant="body2" component="p">
+         start Date:
+         <br />
+         end Date : 
+          
         </Typography>
       </CardContent>
       <Link to ="/project-details">

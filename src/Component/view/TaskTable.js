@@ -51,7 +51,7 @@ export default function CustomizedTables() {
                 <Grid xs={2}>
                     <SideBar />
                 </Grid>
-                <Grid xs={9} style={{ marginTop: "50px" }}>
+                <Grid xs={9} >
                     <h1>Task Name</h1>
                     <TableContainer component={Paper}>
                         <Table className={classes.table} aria-label="customized table">

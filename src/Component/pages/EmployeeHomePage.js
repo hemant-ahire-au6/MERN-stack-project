@@ -3,10 +3,8 @@ import NavBar from "../view/NavBar"
 import SideBar from '../view/SideBar'
 import {Grid} from "@material-ui/core"
 import Card from "../view/Card"
-import Dialog from "../view/Dialog"
-import Dialog2 from "../view/Dialog2"
 
-function HomePage() {
+function EmployeeHomePage() {
     return (
         <>
         <NavBar/>
@@ -15,11 +13,8 @@ function HomePage() {
                     <SideBar/>
                 </Grid>
                 <Grid xs={9} >
-                <h1>Project list </h1>
-                    <div style={{display:"flex"}}>
-                    
-                    <Dialog/>
-                    <Dialog2/>
+                    <div>
+                     <h1>Projects On which your are currently working </h1>
                     </div>
                
 
@@ -44,4 +39,4 @@ function HomePage() {
     
     )
 }
-export default HomePage;
+export default EmployeeHomePage;

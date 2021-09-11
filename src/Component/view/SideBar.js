@@ -55,16 +55,20 @@ export default function PermanentDrawerLeft() {
             >
                 <Divider />
                 <List>
+                    <Link to="/">
+                        <ListItem button >
+                            <ListItemIcon><InboxIcon /></ListItemIcon>
+                            <ListItemText primary="dashboard" />
+                        </ListItem>
+                    </Link>
 
-                    <ListItem button >
-                        <ListItemIcon><InboxIcon /></ListItemIcon>
-                        <ListItemText primary="dashboard" />
-                    </ListItem>
+                    <Link to ="/employee">
+                        <ListItem button >
+                            <ListItemIcon><InboxIcon /></ListItemIcon>
+                            <ListItemText primary="Employee Page" />
+                        </ListItem>
+                    </Link>
 
-                    <ListItem button >
-                        <ListItemIcon><InboxIcon /></ListItemIcon>
-                        <ListItemText primary="Task details" />
-                    </ListItem>
                 </List>
                 <Divider />
                 <List>
