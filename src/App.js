@@ -17,7 +17,6 @@ function App() {
         <Route path="/signup" exact component={SignUp}/>
         <Route path="/project-details" exact component={TableTask}/>
         <Route path="/employee" exact component={EmployeeHomePage}/>
-
       </Switch>
     </div>
   );

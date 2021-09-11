@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
+// import CssBaseline from '@material-ui/core/CssBaseline';
+import Paper from '@material-ui/core/Paper';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -19,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     border: "1px solid black",
-    padding:"40px"
+    padding:"40px",
+    width:"400px"
   },
   avatar: {
     margin: theme.spacing(1),
@@ -31,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
+    height:"50px"
   },
 }));
 
@@ -42,10 +45,11 @@ export default function SignIn() {
     <Navbar/>
     <Container component="main" maxWidth="xs">
      
-      <CssBaseline />
-      <div className={classes.paper}>
+      {/* <CssBaseline /> */}
+      <Paper elevation={10} className={classes.paper} >
+      <div  >
         
-        <Typography component="h1" variant="h5">
+        <Typography component="h1" variant="h5" className="h1-tag">
           Sign in
         </Typography>
         <form className={classes.form} noValidate>
@@ -98,6 +102,8 @@ export default function SignIn() {
           </Grid>
         </form>
       </div>
+     
+      </Paper>
      
     </Container>
     

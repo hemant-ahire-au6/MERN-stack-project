@@ -7,25 +7,30 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
+import NavBar from '../view/NavBar';
+import { InputLabel, Select, MenuItem, FormControl} from "@material-ui/core"
+
 
 
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    margin:"auto",
+    marginTop: theme.spacing(2),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     border: "1px solid black",
     padding:"40px",
-    width:"500px"
+    width:"400px"
   },
   form: {
     width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(3),
+    margin: "auto",
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
+    height:"50px"
   },
 }));
 
@@ -33,12 +38,14 @@ export default function SignUp() {
   const classes = useStyles();
 
   return (
+    <>
+    <NavBar/>
     <Container component="main" maxWidth="xs">
       {/* <CssBaseline /> */}
       <Paper elevation={10} className={classes.paper}>
       <div >
        
-       <Typography component="h1" variant="h5">
+       <Typography component="h1" variant="h5" className="h1-tag" style={{marginBottom:"20px"}}>
          Sign up
        </Typography>
        <form className={classes.form} noValidate>
@@ -105,7 +112,23 @@ export default function SignUp() {
                autoFocus
              />
            </Grid>
-           
+           <Grid item xs={12}>
+              
+           <FormControl style={{ width: "100%" }} >
+            <InputLabel id="demo-simple-select-label">Type of user</InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+            // value={age}
+            // onChange={handleChange}
+            >
+              <MenuItem value={10}>Mentor</MenuItem>
+              <MenuItem value={20}>Employee</MenuItem>
+             
+            </Select>
+          </FormControl>
+           </Grid>
+ 
          </Grid>
          <Button
            type="submit"
@@ -129,5 +152,6 @@ export default function SignUp() {
       </Paper>
     
     </Container>
+    </>
   );
 }

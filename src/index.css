@@ -1,4 +1,6 @@
-.MuiInputBase-input .MuiInput-input{
-margin: 0px;
-height:4rem;
+
+.h1-tag{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
